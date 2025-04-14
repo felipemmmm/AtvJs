@@ -14,16 +14,18 @@
 //ex: array = [["Café", preco, qtd], ["Macarrao", preco, qtd ]];
 // não vai precisar do array eu acho
 
-function adicionar(){
     let compras = document.getElementById("compras");
     let preco = document.getElementById("preco");
     let qtd = document.getElementById("qtd")
     let total = 0;
 
-    if (compras instanceof HTMLSelectElement) {
+    if (compras instanceof HTMLSelectElement && preco instanceof HTMLInputElement) {
         let comprasItens = compras.value;
-        preco?.addEventListener("blur", adicionar   , true)
-
-
+   
+        let precoInput = parseInt(preco.value);
+        preco.addEventListener("blur", preco = 0 , false) //tentando fazer que ao clicar fora do preço, ele volta a 0
     }
+
+
+function adicionar(){
 }
