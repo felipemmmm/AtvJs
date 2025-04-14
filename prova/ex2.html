@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Compras </title>
 </head>
 <body>
     
+    <select name="" id="compras">
+        <option value="default" selected>-- Escolha um Item! --</option>
+        <option value="cafe">Café</option>
+        <option value="leite">Leite</option>
+        <option value="manteiga">Manteiga</option>
+        <option value="biscoito">Biscoito</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="agua">Água</option>
+        <option value="refrigerante">refrigerante</option>
+        <option value="arroz">Arroz</option>
+        <option value="macarrao">Macarrão</option>
+        <option value="feijao">Feijão</option>
+    </select>
+    <br>
+    <br>
+
+    <input type="number" id="preco"  placeholder="Preço...">
+
+    <br>
+    <br>
+    <input type="number" id="qtd" placeholder="Quantidade...">
+    <br>
+    <br>
+    
+    <button onclick="adicionar()">Adicionar Preço</button>
+    <p id="resultado"></p>
+
+    <script src="Assets/ex2.js"></script>
 </body>
 </html>
